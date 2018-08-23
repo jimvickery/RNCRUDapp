@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { AppRegistry, Image } from 'react-native';
+import { AppRegistry, StyleSheet, Image } from 'react-native';
 
 export default class Bananas extends Component {
   render() {
@@ -11,6 +11,22 @@ export default class Bananas extends Component {
     );
   }
 }
+
+
+const styles = StyleSheet.create({
+  container: {
+    borderRadius: 4,
+    borderWidth: 0.5,
+    borderColor: '#d6d7da',
+  },
+  title: {
+    fontSize: 19,
+    fontWeight: 'bold',
+  },
+  activeTitle: {
+    color: 'red',
+  },
+});
 
 // skip this line if using Create React Native App
 AppRegistry.registerComponent('AwesomeProject', () => Bananas);
