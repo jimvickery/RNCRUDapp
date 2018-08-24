@@ -10,7 +10,10 @@ export default class Bananas extends Component {
     return (
       <View style={{backgroundColor: 'blue', flex: 0.3}}>
       <Image source={pic} style={{width: 193, height: 110}}/>
+      <Image source={pic} style={{width: 193, height: 110}}/>
+
       </View>
+      
     );
   }
 }
