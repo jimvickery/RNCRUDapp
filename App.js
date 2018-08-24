@@ -1,13 +1,16 @@
 import React, { Component } from 'react';
-import { AppRegistry, StyleSheet, Image } from 'react-native';
+import { AppRegistry, View, StyleSheet, Image } from 'react-native';
 
 export default class Bananas extends Component {
   render() {
+   
     let pic = {
       uri: 'https://upload.wikimedia.org/wikipedia/commons/d/de/Bananavarieties.jpg'
     };
     return (
+      <View style={{backgroundColor: 'blue', flex: 0.3}}>
       <Image source={pic} style={{width: 193, height: 110}}/>
+      </View>
     );
   }
 }
